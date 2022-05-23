@@ -1,0 +1,97 @@
+.weatherbody {
+    padding: 35px 60px;
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    height: 50%;
+    background-color: rgb(19, 96, 96);
+    margin: 70px auto;
+    border-radius: 20px;
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    left: 50%;
+    width: 1000px;
+    transform: translateX(-50%)
+}
+
+.btn{
+    width: 30%;
+    height: 50px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    font-size: 25px;
+    transition: all 0.3s ease;
+}
+.btn:hover {
+    transform: translateY(-5px);
+}
+
+.london {
+    background-color: rgb(247, 82, 82);
+    color: white;
+}
+
+.zp {
+    background-color: rgb(253, 246, 95);
+}
+
+.berlin {
+    background-color: rgb(2, 226, 151);
+}
+
+.weatherinfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: aliceblue;
+}
+
+.weather {
+    font-size: 40px;
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+
+.fa-cloud-bolt {
+    font-size: 100px;
+    color: rgb(170, 250, 32);
+}
+
+[role] {
+    font-size: 100px;
+    color: rgb(170, 250, 32);
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 40px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.city {
+    font-size: 60px;
+}
+
+.humidity {
+    margin-top: 20px;
+    font-size: 30px;
+}
+.wind {
+    margin-top: 25px;
+    color: rgb(170, 250, 32);
+}
+
+.temp {
+    margin-top: 20px;
+    font-size: 50px;
+    color: rgb(239, 99, 99);
+}
