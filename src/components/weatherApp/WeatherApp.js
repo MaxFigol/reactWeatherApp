@@ -12,6 +12,7 @@ const WeatherApp = () => {
     const {getWeatherCity} = WeatherService();
     const [weathers, setWeather] = useState({});
     const [loading, setLoading] = useState(true);
+    const [searchCity, setSearchCity] = useState('')
     
     useEffect (() => {
         updateWeather();
@@ -42,8 +43,15 @@ const WeatherApp = () => {
         setTimeout(setLoad, 1000)
     }
 
-    
+    const onChangeValue = (e) => {
+        setSearchCity(e.target.value);
+    } 
 
+    const searchNewCity = (e) => {
+        e.preventDefault()
+        updateWeather(searchCity)
+        setSearchCity('')
+    }
 
     
     const load = loading ? <Spinner/> : null;
@@ -59,6 +67,10 @@ const WeatherApp = () => {
                 <button className='btn zp' onClick={() => updateWeather('zaporizhia')}>Запорожье</button>
                 <button className='btn berlin' onClick={() => updateWeather('berlin')}>Берлин</button>
             </div>
+            <form onSubmit={searchNewCity}>
+                <input placeholder='Одесса' value={searchCity} className='input' type="text" onChange={onChangeValue}/>
+                <button className='search-button'>Найти город</button>
+            </form>
         </>
         
     )

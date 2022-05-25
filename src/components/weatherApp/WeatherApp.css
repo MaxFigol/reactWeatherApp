@@ -95,3 +95,33 @@
     font-size: 50px;
     color: rgb(239, 99, 99);
 }
+
+.input {
+    width: 800px;
+    margin-right: 5px;
+    height: 40px;
+    background-color: rgb(223, 223, 223);
+    border: 0;
+    border-radius: 5px;
+    font-size: 18px;
+    outline: none;
+    padding-left: 10px;
+}
+
+.search-button {
+    height: 40px;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(0, 102, 255);
+    color: white;
+    font-size: 18px;
+}
+form {
+    display: flex;
+    height: 40px;
+    position: relative;
+    left: 25%;
+    margin-top: 20px;
+}
